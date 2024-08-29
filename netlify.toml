@@ -1,0 +1,7 @@
+[build]
+    command = "npm run build"
+    functions = "netlify/function"
+    publish = "dist"
+
+[context.production.environment]
+    VITE_APP_URL_BASE= "https://wefit-movies.vercel.app/api"
